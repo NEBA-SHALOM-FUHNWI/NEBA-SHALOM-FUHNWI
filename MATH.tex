@@ -1,0 +1,106 @@
+\documentclass[a4paper]{book}
+\usepackage{amssymb,amsthm, mathtools}
+\usepackage[margin=1in]{geometry}
+\linespread{1.6}
+\begin{document}
+\begin{center}
+UNIVERSITY OF BUEA
+\end{center}
+\begin{center}
+FACULTY OF SCIENCE
+\end{center}
+\begin{center}
+SECOND SEMESTER EXAMINATION
+\end{center}
+\begin{flushleft}
+DEPARTMENT: Mathematics\\
+MONTH: July\\
+YEAR: 2024\\
+DATE: 06-07-2024\\
+TIME ALLOWED: Two Hours\\
+\end{flushleft}
+\begin{flushright}
+COURSE INSTRUCTOR: Nkeck Jake\\
+COURSE CODE \& NUMBER: MAT304\\
+COURSE TITLE: Linear Algebra II\\
+CREDIT VALUE: Six Credits\\
+PERIOD: 08:00-10:00\\
+\end{flushright}
+\begin{center}
+Instructions: Answer all questions
+\end{center}
+
+\begin{enumerate}
+\item Let \emph{V, W} be two vectors spaces over the field $\mathbb{F}$ and \emph{U} and \emph{S} be two subspaces of \emph{V}. Clearly define the following concepts:
+	\begin{enumerate}
+	\item The anihilator $\emph{U}^0$ of \emph{U}.
+	\item $V = U \oplus S.$
+	\item $T : V \rightarrow W$ is a one to one linear transformation.
+	\item V is an inner product space with the inner product $<\cdot,\cdot>$
+	\item The norm $\lVert \cdot \rVert$ associated to the inner product $<\cdot, \cdot>$
+	\item $T : V \rightarrow V$ is a projection on \emph{U} and \emph{S}.
+	\item The adjoint $\emph{T}^*$ of an endomorphism $T : V \rightarrow V$ if \emph{V} is an inner product space. 
+	\end{enumerate}
+\item Let \emph{V} be a vector space over the field $\mathbb{F}$ , \emph{U} and \emph{W} two subspaces of \emph{V} such that $\emph{U} \subset \emph{W}$. Consider the map $T : V/U \rightarrow V/W$ such that T(x + U) = x + W.
+	\begin{enumerate}
+	\item Enunciate the first isomorphism theorem.
+	\item Show that \emph{T} is a \textbf{well defined surjective linear map}.
+	\item Find \emph{KerT}.
+	\item Using the first isomorphism theorem, show that \emph{(V/U)/(W/U)} is isomorphic to \emph{V/W}
+	\end{enumerate}
+\item Let $U = \{(x, 0, -x) : x \epsilon \mathbb{R} \}$ and $W = \{(-x, x +z, z) : x, z \in \mathbb{R}\}$.
+	\begin{enumerate}
+	\item Show that $\mathbb{R}^3 = \emph{U} \oplus \emph{W}$.
+	\item Find a basis of $\emph{U}^0$ and its dimension.
+\end{enumerate}
+	\item Show that 0 is an eigenvalue of a linear transformation \emph{T} if and only if \emph{T} is not one to one.
+	\item Let \emph{V} be a real inner product space, $<\cdot,\cdot>$ the inner product on \emph{V} and $\lVert \cdot \rVert$ its associated norm. Let $\emph{u, v} \in \emph{V} and \alpha \in \mathbb{F}$.
+\begin{enumerate}
+	\item
+	\begin{enumerate}
+	\item Verify that $0\leq \Vert u - \alpha v \rVert ^2 = \lVert u \rVert^2 - ( \overline\alpha <u,v>) + \alpha \overline<u,v>) + \lvert \alpha \rvert^2 \lVert v \rVert^2$.
+	%\item Deduce that for $\alpha = \frac{<u,v>}{<v,v>}$ one has $0 \leq \lVert u \rVert^2 - \frac{\lvert <u,v> \rvert}^2{\lVert v \rVert^2}$.
+	\item Deduce that for $\alpha = \frac{<u,v>}{<v,v>}$ one has $0 \leq \lVert u \rVert^2$ - $\frac{\lvert <u,v> \rvert^2}{\lVert v\rVert^2}$
+	\item Conclude that $\lvert <u,v> \rvert \leq \lVert u \rVert \lVert v \rVert$.
+\end{enumerate} 
+	\item Use the previous inequality to show the triangle's inequality$\lVert u + v \rVert \leq \lVert u \rVert + \lVert v \rVert$.
+\end{enumerate}
+		\item Let V be a vector space with $\emph{V} = \emph{U} \oplus \emph{W}$ an $ T : V \rightarrow V$ the projection of V on U along W. Show that $Id_v$ - \emph{T} is the projection of V on W along U.
+	\item Let $T : \mathbb{R}^3 \rightarrow \mathbb{R}^3$ have the matrix \\ 
+	\begin{center}$\begin{pmatrix}
+0 & 5  &1\\ 2 & 0 & -1\\ 0 & 3 & 0
+
+\end{pmatrix}$\end{center}	
+with respect to the standard basis of $\mathbb{R}^3$.
+\begin{enumerate}
+	\item Calculate the eigenvalue of \emph{T}.
+	\item Deduce one eigenvector v of \emph{T} and let $S = <v>$.
+	\item Determine a basis of $\mathbb{R}^3$ with respect to which \emph{T's} matrix is triangular.
+\end{enumerate}
+	\item Let V be an inner product space. An endomorphism $T : V \rightarrow V$ is said to be normal if $T \circ T^{*} = T^{*} \circ T$.
+\begin{enumerate}
+	\item 
+\begin{enumerate}
+	\item Suppose T is normal, show that for any $x, y \epsilon V, <T(x), T(y)> = < T^{*}(x), T^{*}(y)>$.
+	\item  Conversely suppose that for any  $x, y \in V, <T(x), T(y)> = <T^{*}(x), T^{*}(y)>$ , show that T is normal.
+\end{enumerate}
+	\item The goal of this question is to show that an endomorphism $T : V \rightarrow V$ is normal \textbf{if and only if} $\lVert T(x) \rVert$ = $\lVert T^{*}(x) \rVert$ for any $x \in V$, where$\lVert \cdot \rVert$ is the norm associated to the inner product of V. 
+\begin{enumerate}
+	\item SupposeT is normal, show that $\lVert T(x) \rVert = \lVert T^{*}(x) \rVert for any x \in V$.
+	\item Suppose $\lVert T(x) \rVert$ = $\lVert T^{*}(x) \rVert$ for any $x \epsilon V$ . Let $x,y \in V$.
+\begin{enumerate}
+	\item Using the fact that $\lVert T(x + y) \rVert$ = $\lVert T^{*}(x + y) \rVert$, Show that
+\begin{center}
+	$<T(x), T(y)> + <T(y), T(x)> = <T^{*}(x),T^{*}(y)> + <T^{*}(y),T^{*}(x)>$
+\end{center}
+	\item Use the previous questions  to conclude that $<T(x),T(y)> = <T^{*}(x), T^{*}(y)>$ for any $x, y \in V$.
+	\item Deduce that $\lVert T(x) \rVert$ = $\lVert T^{*}(x) \rVert$.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+
+
+\end{enumerate}
+
+\end{document}
